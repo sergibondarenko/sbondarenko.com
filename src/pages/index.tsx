@@ -5,7 +5,10 @@ export default function Home() {
   return (
     <div className="h-screen">
       <Header />
-      <Profile />
+
+      <main className="max-w-screen-lg mx-auto">
+        <Profile />
+      </main>
     </div>
   );
 }

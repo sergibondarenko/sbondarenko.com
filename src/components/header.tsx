@@ -39,7 +39,7 @@ function MenuFlyOutProjects({ onClick }: MenuFlyOutProjectsProps) {
             <Link
               key={name}
               color="inherit"
-              className="hover:text-blue-500 no-underline cursor-pointer flex-1"
+              className="hover:text-sky-700 no-underline cursor-pointer flex-1"
               onClick={() => onClick(path)}
             >
               {name}
@@ -52,7 +52,7 @@ function MenuFlyOutProjects({ onClick }: MenuFlyOutProjectsProps) {
 
   return (
     <div>
-      <div className="flex gap-1 cursor-pointer hover:text-blue-500">
+      <div className="flex gap-1 cursor-pointer hover:text-sky-700">
         <Link
           color="inherit"
           className="no-underline"
@@ -93,21 +93,21 @@ function MenuFlyOut({ isOpen, onClose }: MenuFlyOutProps) {
       <IconButton
         onClick={handleMenuClose}
         aria-label="close menu"
-        className="text-white hover:text-blue-500"
+        className="text-white hover:text-sky-700"
       >
         <CloseIcon />
       </IconButton>
       <div className="flex flex-col gap-2 pl-8">
         <Link
           color="inherit"
-          className="hover:text-blue-500 no-underline cursor-pointer"
+          className="hover:text-sky-700 no-underline cursor-pointer"
           onClick={() => handleNavigation(PAGES.home.path)}
         >
           Home
         </Link>
         <Link
           color="inherit"
-          className="hover:text-blue-500 no-underline cursor-pointer"
+          className="hover:text-sky-700 no-underline cursor-pointer"
           onClick={() => handleNavigation(PAGES.about.path)}
         >
           About
@@ -139,7 +139,7 @@ function HeaderProjects({ onClick }: HeaderProjectsProps) {
               <Link
                 key={name}
                 color="inherit"
-                className="hover:text-blue-500 no-underline cursor-pointer flex-1"
+                className="hover:text-sky-700 no-underline cursor-pointer flex-1"
                 onClick={() => onClick(path)}
               >
                 {name}
@@ -153,7 +153,7 @@ function HeaderProjects({ onClick }: HeaderProjectsProps) {
 
   return (
     <div className="dropdown">
-      <div className="flex gap-1 cursor-pointer hover:text-blue-500">
+      <div className="flex gap-1 cursor-pointer hover:text-sky-700">
         <Link
           color="inherit"
           className="no-underline"
@@ -200,7 +200,7 @@ export function Header() {
             <Typography
               variant="h6"
               component="div"
-              className="flex-1 cursor-pointer hover:text-blue-500"
+              className="flex-1 cursor-pointer hover:text-sky-700"
               onClick={() => handleNavigation(PAGES.home.path)}
             >
               Sergii Bondarenko
@@ -209,14 +209,14 @@ export function Header() {
             <div className="hidden md:flex flex-row gap-8">
               <Link
                 color="inherit"
-                className="hover:text-blue-500 no-underline cursor-pointer"
+                className="hover:text-sky-700 no-underline cursor-pointer"
                 onClick={() => handleNavigation(PAGES.home.path)}
               >
                 Home
               </Link>
               <Link
                 color="inherit"
-                className="hover:text-blue-500 no-underline cursor-pointer"
+                className="hover:text-sky-700 no-underline cursor-pointer"
                 onClick={() => handleNavigation(PAGES.about.path)}
               >
                 About
