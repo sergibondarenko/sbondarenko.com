@@ -122,7 +122,7 @@ interface HeaderProjectsProps {
   onClick: Function;
 }
 
-function HeaderProjects({ onClick }: HeaderProjectsProps) {
+function HeaderProjectsMenu({ onClick }: HeaderProjectsProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function handleMenuTrigger() {
@@ -131,7 +131,7 @@ function HeaderProjects({ onClick }: HeaderProjectsProps) {
 
   function renderMenu() {
     return (
-      <div className="dropdown-content right-0">
+      <div className="dropdown-content right-0 z-10">
         <div className="flex flex-col gap-2 mt-1 pl-8 
         py-2 bg-gray-800 text-white w-56 shadow-2xl">
           {Object.entries(PROJECTS).map(([name, { path }]) => {
@@ -221,7 +221,7 @@ export function Header() {
               >
                 About
               </Link>
-              <HeaderProjects onClick={handleNavigation} />
+              <HeaderProjectsMenu onClick={handleNavigation} />
             </div>
           </Toolbar>
         </AppBar>
