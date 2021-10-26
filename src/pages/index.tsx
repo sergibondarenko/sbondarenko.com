@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Profile, SelectedWorks } from '../components';
+import { Header, Profile, SelectedWorks, Footer } from '../components';
 
 export default function Home() {
   return (
@@ -10,6 +10,8 @@ export default function Home() {
         <Profile />
         <SelectedWorks />
       </main>
+
+      <Footer />
     </div>
   );
 }

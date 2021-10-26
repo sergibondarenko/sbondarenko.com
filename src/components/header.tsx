@@ -6,9 +6,6 @@ import {
   Toolbar,
   Box,
   AppBar,
-  Button,
-  Menu,
-  MenuItem
 } from '@mui/material';
 import {
   Menu as MenuIcon,
