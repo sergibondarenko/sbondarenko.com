@@ -20,7 +20,7 @@ export function Footer() {
             <GitHubIcon />
           </IconButton>
         </div>
-        <div>
+        <div className="flex flex-row gap-2 items-center">
           <IconButton
             color="default"
             aria-label="Email"
@@ -29,7 +29,12 @@ export function Footer() {
           >
             <EmailIcon />
           </IconButton>
-          <a href="mailto:sergibondarenko@gmail.com" className="hover:text-sky-700">sergibondarenko@gmail.com</a>
+          <a
+            href="mailto:sergibondarenko@gmail.com"
+            className="hover:text-sky-700 hidden md:block text-xl"
+          >
+            sergibondarenko@gmail.com
+          </a>
         </div>
       </div>
     </footer>
