@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Profile } from '../components';
+import { Header, Profile, SelectedWorks } from '../components';
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
 
       <main className="max-w-screen-lg mx-auto">
         <Profile />
+        <SelectedWorks />
       </main>
     </div>
   );
