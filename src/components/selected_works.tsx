@@ -7,7 +7,7 @@ function SelectedWork({ name, image, path }) {
   const router = useRouter();
 
   function handleClick() {
-    window.open(path, '_blank');
+    router.push(path);
   }
 
   return (
