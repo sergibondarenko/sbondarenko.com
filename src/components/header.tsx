@@ -128,7 +128,7 @@ function HeaderProjectsMenu({ onClick }: HeaderProjectsProps) {
 
   function renderMenu() {
     return (
-      <div className="dropdown-content right-0 z-10">
+      <div className="dropdown-content right-0 z-50">
         <div className="flex flex-col gap-2 mt-1 pl-8 
         py-2 bg-gray-800 text-white w-56 shadow-2xl">
           {Object.entries(PROJECTS).map(([name, { path }]) => {
@@ -180,50 +180,52 @@ export function Header() {
   }
 
   return (
-    <header className="relative">
-      <Box className="flex-1">
-        <AppBar position="static" color="transparent" className="shadow-none">
-          <Toolbar>
-            <IconButton
-              className="md:hidden mr-2"
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              onClick={handleMenuFlyOutTrigger}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Typography
-              variant="h6"
-              component="div"
-              className="flex-1 cursor-pointer hover:text-sky-700"
-              onClick={() => handleNavigation(PAGES.home.path)}
-            >
-              Sergii Bondarenko
-            </Typography>
-            
-            <div className="hidden md:flex flex-row gap-8">
-              <Link
+    <header>
+      <div className="relative">
+        <Box className="flex-1">
+          <AppBar position="static" color="transparent" className="shadow-none bg-gray-800 text-white z-40">
+            <Toolbar>
+              <IconButton
+                className="md:hidden mr-2"
+                size="large"
+                edge="start"
                 color="inherit"
-                className="hover:text-sky-700 no-underline cursor-pointer"
+                aria-label="menu"
+                onClick={handleMenuFlyOutTrigger}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Typography
+                variant="h6"
+                component="div"
+                className="flex-1 cursor-pointer hover:text-sky-700"
                 onClick={() => handleNavigation(PAGES.home.path)}
               >
-                Home
-              </Link>
-              <Link
-                color="inherit"
-                className="hover:text-sky-700 no-underline cursor-pointer"
-                onClick={() => handleNavigation(PAGES.about.path)}
-              >
-                About
-              </Link>
-              <HeaderProjectsMenu onClick={handleNavigation} />
-            </div>
-          </Toolbar>
-        </AppBar>
-      </Box>
-      <MenuFlyOut isOpen={isMenuFlyOut} onClose={handleMenuFlyOutTrigger} />
+                Sergii Bondarenko
+              </Typography>
+
+              <div className="hidden md:flex flex-row gap-8">
+                <Link
+                  color="inherit"
+                  className="hover:text-sky-700 no-underline cursor-pointer"
+                  onClick={() => handleNavigation(PAGES.home.path)}
+                >
+                  Home
+                </Link>
+                <Link
+                  color="inherit"
+                  className="hover:text-sky-700 no-underline cursor-pointer"
+                  onClick={() => handleNavigation(PAGES.about.path)}
+                >
+                  About
+                </Link>
+                <HeaderProjectsMenu onClick={handleNavigation} />
+              </div>
+            </Toolbar>
+          </AppBar>
+        </Box>
+        <MenuFlyOut isOpen={isMenuFlyOut} onClose={handleMenuFlyOutTrigger} />
+      </div>
     </header>
   );
 }
