@@ -6,14 +6,21 @@ export default function Sentinl() {
     <div className="h-screen">
       <Header />
 
-      <main className="max-w-screen-lg mx-auto">
+      <main className="max-w-screen-lg mx-auto p-4">
         <div className="mt-4 text-center text-sky-700">
           <h2 className="text-4xl">Sentinl</h2>
           <p className="text-2xl mt-4">
-            <a href="https://github.com/sentinl/sentinl" className="underline" target="_blank">Sentinl</a> is 
-            <a href="https://www.elastic.co/kibana/" className="underline" target="_blank">Kibana</a> alerting plugin with <span className="text-black">1k+ stars on GitHub</span>. 
-            The main idea is that you schedule searches in <a href="https://www.elastic.co/elasticsearch/" target="_blank" className="underline">Elasticsearch</a> and execute actions (Email, Webhook, Slack, etc.) when the conditions are met.
+            <a href="https://github.com/sentinl/sentinl" className="underline" target="_blank">Sentinl</a> is <a href="https://www.elastic.co/kibana/" className="underline" target="_blank">Kibana</a> alerting plugin 
+            with <span className="text-black">1k+ stars on GitHub</span>. 
+            The main idea is that you schedule searches in <a href="https://www.elastic.co/elasticsearch/" target="_blank" className="underline">Elasticsearch</a> and 
+            execute actions (Email, Webhook, Slack, etc.) when the conditions are met.
           </p>
+        </div>
+
+        <div className="mt-10">
+          <article>
+            I developed the plugin using <b>JavaScript</b>, <b>AngularJS</b>, and <b>Node.js</b>.
+          </article>
         </div>
       </main>
 

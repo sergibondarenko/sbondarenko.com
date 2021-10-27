@@ -6,12 +6,20 @@ export default function TwitterClone() {
     <div className="h-screen">
       <Header />
 
-      <main className="max-w-screen-lg mx-auto">
+      <main className="mx-auto max-w-screen-lg p-4">
         <div className="mt-4 text-center text-sky-700">
-          <h2 className="text-4xl">Twitter Clone</h2>
-          <p className="text-2xl mt-4">
-            I developed the <a href="https://github.com/sergibondarenko/twitter-clone" target="_blank" className="underline">Twitter Clone</a> for fun and to learn new technologies.
-          </p>
+          <article>
+            <h2 className="text-4xl">Twitter Clone</h2>
+            <p className="text-2xl mt-4">
+              I developed the <a href="https://github.com/sergibondarenko/twitter-clone" target="_blank" className="underline">Twitter Clone</a> for fun and to learn new technologies.
+            </p>
+          </article>
+        </div>
+
+        <div className="mt-10">
+          <article>
+            <p>I used <b>TypeScript</b> (a JavaScript superset), <b>React</b>, and Google <a href="https://firebase.google.com/" target="_blank" className="underline text-sky-700">Firebase</a> for the data storage.</p>
+          </article>
         </div>
       </main>
 
