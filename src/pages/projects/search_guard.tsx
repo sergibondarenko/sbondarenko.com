@@ -1,4 +1,5 @@
 import React from 'react';
+import VideoPlayer from 'react-player';
 import { Header, Footer } from '../../components';
 
 export default function SearchGuard() {
@@ -19,6 +20,18 @@ export default function SearchGuard() {
           <article>
             I develop <a href="https://git.floragunn.com/search-guard/search-guard-kibana-plugin" target="_blank" className="underline text-sky-700">WEB UI for the Search Guard</a> using <b>JavaScript</b>, <b>Node.js</b>, and <b>React</b>. Also, I develop <b>Selenium</b>-based integration tests in <b>Java</b> and unit tests in <b>Jest</b>.
           </article>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <VideoPlayer width="100%" url="https://youtu.be/ewM9glvw0E4" controls />
+          </div>
+          <div>
+            <VideoPlayer width="100%" url="https://youtu.be/TIpN413V1gQ" controls />
+          </div>
+          <div>
+            <VideoPlayer width="100%" url="https://youtu.be/Wqk0m8ibNnM" controls />
+          </div>
         </div>
       </main>
 

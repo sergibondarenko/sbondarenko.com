@@ -1,4 +1,5 @@
 import React from 'react';
+import VideoPlayer from 'react-player';
 import { Header, Footer } from '../../components';
 
 export default function Sentinl() {
@@ -21,6 +22,15 @@ export default function Sentinl() {
           <article>
             I developed the plugin using <b>JavaScript</b>, <b>AngularJS</b>, and <b>Node.js</b>.
           </article>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <VideoPlayer width="100%" url="https://youtu.be/qk9ZZYqUevU" controls />
+          </div>
+          <div>
+            <VideoPlayer width="100%" url="https://youtu.be/9iiKfpdKLQ8" controls />
+          </div>
         </div>
       </main>
 
