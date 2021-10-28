@@ -1,7 +1,19 @@
 import React from 'react';
-import { Header, Footer } from '../../components';
+import { Header, Footer, AdaptiveImageGallery } from '../../components';
+
+function getImages() {
+  const images = [];
+  for (let i = 13; i > -1; i--) {
+    images.push(`/static/images/uber_screenshots/${i}.png`);
+  }
+  return images;
+}
 
 export default function UberClone() {
+  function handleImageGalleryClick() {
+    window.open('https://github.com/sergibondarenko/uber', '_blank');
+  }
+  
   return (
     <div className="h-screen">
       <Header />
@@ -18,6 +30,10 @@ export default function UberClone() {
           <article>
             I used <b>TypeScript</b> (a JavaScript superset), <b>React Native</b>, <b>Redux</b>, <b>Tailwind CSS</b> and the <a href="https://developers.google.com/maps" target="_blank" className="underline text-sky-700">Google Maps API</a>. 
           </article>
+        </div>
+
+        <div className="mt-10">
+          <AdaptiveImageGallery images={getImages()} onClick={handleImageGalleryClick} />
         </div>
       </main>
 
