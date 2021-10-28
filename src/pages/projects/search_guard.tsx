@@ -36,10 +36,22 @@ export default function SearchGuard() {
             <VideoPlayer width="100%" url="https://youtu.be/ewM9glvw0E4" controls />
           </div>
           <div>
-            <VideoPlayer width="100%" url="https://youtu.be/TIpN413V1gQ" controls />
+            <VideoPlayer width="100%" url="https://youtu.be/SMaxuNPc2CI" controls />
+          </div>
+          <div>
+            <VideoPlayer width="100%" url="https://youtu.be/lQNauVac8tw" controls />
           </div>
           <div>
             <VideoPlayer width="100%" url="https://youtu.be/Wqk0m8ibNnM" controls />
+          </div>
+          <div>
+            <VideoPlayer width="100%" url="https://youtu.be/TIpN413V1gQ" controls />
+          </div>
+          <div>
+            <VideoPlayer width="100%" url="https://youtu.be/gdtrphHWK7M" controls />
+          </div>
+          <div>
+            <VideoPlayer width="100%" url="https://youtu.be/Big_niMxQJ4" controls />
           </div>
         </div>
 
