@@ -1,7 +1,19 @@
 import React from 'react';
-import { Header, Footer } from '../../components';
+import { Header, Footer, AdaptiveImageGallery } from '../../components';
+
+function getImages() {
+  const images = [];
+  for (let i = 4; i > -1; i--) {
+    images.push(`/static/images/twitter_screenshots/${i}.png`);
+  }
+  return images;
+}
 
 export default function TwitterClone() {
+  function handleImageGalleryClick() {
+    window.open('https://twitter-clone-b815e.web.app/', '_blank');
+  }
+  
   return (
     <div className="h-screen">
       <Header />
@@ -20,6 +32,10 @@ export default function TwitterClone() {
           <article>
             <p>I used <b>TypeScript</b> (a JavaScript superset), <b>React</b>, and Google <a href="https://firebase.google.com/" target="_blank" className="underline text-sky-700">Firebase</a> for the data storage.</p>
           </article>
+        </div>
+
+        <div className="mt-10">
+          <AdaptiveImageGallery images={getImages()} onClick={handleImageGalleryClick} />
         </div>
       </main>
 
