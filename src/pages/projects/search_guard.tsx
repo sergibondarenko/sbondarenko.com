@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoPlayer from 'react-player';
+import VideoPlayer from 'react-player/lazy';
 import { Header, Footer, AdaptiveImageGallery } from '../../components';
 
 function getImages() {
