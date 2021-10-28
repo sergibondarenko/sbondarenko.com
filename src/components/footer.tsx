@@ -7,7 +7,7 @@ import { IconButton } from '@mui/material';
 
 export function Footer() {
   return (
-    <footer className="max-w-screen-lg mx-auto p-2 sticky bottom-0 bg-white">
+    <footer className="p-2 fixed w-full bottom-0 bg-white">
       <div className="flex flex-row gap-2">
         <div>
           <IconButton
