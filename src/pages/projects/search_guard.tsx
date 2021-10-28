@@ -1,8 +1,17 @@
 import React from 'react';
 import VideoPlayer from 'react-player';
-import { Header, Footer } from '../../components';
+import { Header, Footer, AdaptiveImageGallery } from '../../components';
+
+const images = [];
+for (let i = 50; i > -1; i--) {
+  images.push(`/static/images/searchguard_screenshots/${i}.png`);
+}
 
 export default function SearchGuard() {
+  function handleImageGalleryClick() {
+    window.open('https://git.floragunn.com/search-guard/search-guard-kibana-plugin', '_blank');
+  }
+
   return (
     <div className="h-screen">
       <Header />
@@ -32,6 +41,10 @@ export default function SearchGuard() {
           <div>
             <VideoPlayer width="100%" url="https://youtu.be/Wqk0m8ibNnM" controls />
           </div>
+        </div>
+
+        <div className="mt-10">
+          <AdaptiveImageGallery images={images} onClick={handleImageGalleryClick} />
         </div>
       </main>
 
