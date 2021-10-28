@@ -2,9 +2,12 @@ import React from 'react';
 import VideoPlayer from 'react-player';
 import { Header, Footer, AdaptiveImageGallery } from '../../components';
 
-const images = [];
-for (let i = 50; i > -1; i--) {
-  images.push(`/static/images/searchguard_screenshots/${i}.png`);
+function getImages() {
+  const images = [];
+  for (let i = 50; i > -1; i--) {
+    images.push(`/static/images/searchguard_screenshots/${i}.png`);
+  }
+  return images;
 }
 
 export default function SearchGuard() {
@@ -56,7 +59,7 @@ export default function SearchGuard() {
         </div>
 
         <div className="mt-10">
-          <AdaptiveImageGallery images={images} onClick={handleImageGalleryClick} />
+          <AdaptiveImageGallery images={getImages()} onClick={handleImageGalleryClick} />
         </div>
       </main>
 

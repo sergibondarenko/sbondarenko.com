@@ -1,7 +1,19 @@
 import React from 'react';
-import { Header, Footer } from '../../components';
+import { Header, Footer, AdaptiveImageGallery } from '../../components';
+
+function getImages() {
+  const images = [];
+  for (let i = 9; i > -1; i--) {
+    images.push(`/static/images/wordcharge_screenshots/${i}.png`);
+  }
+  return images;
+}
 
 export default function Wordcharge() {
+  function handleImageGalleryClick() {
+    window.open('https://wordcharge.com', '_blank');
+  }
+
   return (
     <div className="h-screen">
       <Header />
@@ -25,6 +37,10 @@ export default function Wordcharge() {
             The sign-in and log-in are possible via integration with the <a href="https://auth0.com/" target="_blank" className="underline text-sky-700">Auth0</a> service. 
             Some more good additions and improvements are coming; read more about them in the <b><a href="https://github.com/sergibondarenko/wordcharge/blob/main/TODO.md" target="_blank" className="underline text-sky-700">todo</a></b>.
           </article>
+        </div>
+
+        <div className="mt-10">
+          <AdaptiveImageGallery images={getImages()} onClick={handleImageGalleryClick} />
         </div>
       </main>
 
