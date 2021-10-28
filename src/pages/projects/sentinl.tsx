@@ -10,7 +10,7 @@ export default function Sentinl() {
       <main className="max-w-screen-lg mx-auto p-4">
         <div className="mt-4 text-center text-sky-700">
           <h2 className="text-4xl">Sentinl</h2>
-          <p className="text-2xl mt-4">
+          <p className="text-xl md:text-2xl mt-4">
             <a href="https://github.com/sentinl/sentinl" className="underline" target="_blank">Sentinl</a> is <a href="https://www.elastic.co/kibana/" className="underline" target="_blank">Kibana</a> alerting plugin 
             with <span className="text-black">1k+ stars on GitHub</span>. 
             The main idea is that you schedule searches in <a href="https://www.elastic.co/elasticsearch/" target="_blank" className="underline">Elasticsearch</a> and 

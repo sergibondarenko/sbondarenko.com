@@ -21,7 +21,7 @@ export default function AmazonClone() {
       <main className="max-w-screen-lg mx-auto p-4">
         <div className="mt-4 text-center text-sky-700">
           <h2 className="text-4xl">Amazon Clone</h2>
-          <p className="text-2xl mt-4">
+          <p className="text-xl md:text-2xl mt-4">
             I developed the <a href="https://github.com/sergibondarenko/amazon" target="_blank" className="underline">Amazon Clone</a> for fun and to learn new technologies.
           </p>
         </div>

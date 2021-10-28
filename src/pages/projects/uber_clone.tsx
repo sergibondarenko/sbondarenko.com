@@ -21,7 +21,7 @@ export default function UberClone() {
       <main className="max-w-screen-lg mx-auto p-4">
         <div className="mt-4 text-center text-sky-700">
           <h2 className="text-4xl">Uber Clone</h2>
-          <p className="text-2xl mt-4">
+          <p className="text-xl md:text-2xl mt-4">
             I developed the <a href="https://github.com/sergibondarenko/uber" target="_blank" className="underline">Uber Clone</a> for fun and to learn new technologies.
           </p>
         </div>
