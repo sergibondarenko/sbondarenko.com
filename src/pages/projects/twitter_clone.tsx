@@ -11,7 +11,7 @@ function getImages() {
 
 export default function TwitterClone() {
   function handleImageGalleryClick() {
-    window.open('https://twitter-clone-b815e.web.app/', '_blank');
+    window.open('https://twitter-clone.sbondarenko.com', '_blank');
   }
   
   return (
