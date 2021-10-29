@@ -43,7 +43,7 @@ export default function About() {
           </div>
         </article>
 
-        <article>
+        <article className="mb-20">
           <h3 className="mb-6 text-xl">Education</h3>
           <p className="mb-2">2001 - 2007</p>
           <p><b>BSc in Computer Science</b> at the <a href="https://nau.edu.ua/en/" target="_blank" className="underline text-sky-700">National Aviation University</a>, Kyiv, Ukraine.</p>
