@@ -16,6 +16,9 @@ export function Footer() {
             href="https://github.com/sergibondarenko"
             target="_blank"
             className="hover:text-sky-700"
+            sx={{
+              color: '#2d3748'
+            }}
           >
             <GitHubIcon />
           </IconButton>
@@ -26,6 +29,9 @@ export function Footer() {
             aria-label="Email"
             href="mailto:sergibondarenko@gmail.com"
             className="hover:text-sky-700"
+            sx={{
+              color: '#2d3748'
+            }}
           >
             <EmailIcon />
           </IconButton>
