@@ -16,12 +16,10 @@ function SelectedWork({ name, image, path }) {
         onClick={handleClick}
         cardContent={{
           headerText: name,
-          bodyText: name
         }}
         cardMedia={{
           alt: name,
-          image: image,
-          height: "70"
+          src: image,
         }}
       />
     </div>
@@ -30,11 +28,11 @@ function SelectedWork({ name, image, path }) {
 
 export function SelectedWorks() {
   return (
-    <div className="p-4 mt-4">
+    <div className="p-4 mt-6">
       <div className="text-center">
         <h2 className="text-sky-700 text-2xl">Selected works</h2>
       </div>
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="mt-8 mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {Object.entries(PROJECTS)
           .map(([name, { media, path }]) => {
             return (

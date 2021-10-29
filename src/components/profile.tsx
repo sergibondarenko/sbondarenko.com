@@ -11,7 +11,7 @@ function GitHubProfileCard() {
       <PrimaryActionCard
         cardMedia={{
           height: "140",
-          image: "https://avatars.githubusercontent.com/u/5389745?s=400&u=8fc6893cc45aebaaed2ed7b037176d432e0357d5&v=4",
+          src: "https://avatars.githubusercontent.com/u/5389745?s=400&u=8fc6893cc45aebaaed2ed7b037176d432e0357d5&v=4",
           alt: "GitHub profile"
         }}
         cardContent={{
@@ -29,8 +29,9 @@ function StackOverflowBadge() {
     <a href="https://stackoverflow.com/users/2393924/srgbnd" target="_blank">
       <img
         src="https://stackoverflow.com/users/flair/2393924.png"
-        width="208"
-        height="58"
+        className="object-contain h-14 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 hover:shadow-lg"
+        //width="208"
+        //height="58"
         alt="profile for srgbnd at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
         title="profile for srgbnd at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
       />
